@@ -1,0 +1,149 @@
+body{
+    background-color: #FFA07A;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+.head{
+    background-color: #FFFFE0;
+    height: 70px;
+    border-bottom: 2px solid black;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 10px; 
+}
+
+.rightBtn, .centerBtn, .leftBtn, .searchBtn,.sendBtn {
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 5px red;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.searchInput{
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.searchBtn{
+    border-radius: 10px;
+}
+
+
+.rightBtn:hover, .centerBtn:hover, .leftBtn:hover, .searchBtn:hover, .sendBtn:hover{
+    background-color: red;
+    box-shadow: -2px -2px 5px blue;
+    /* text-shadow: 12px 12px 0px green; */
+   
+}
+
+
+.searchBlock{
+    display: flex;
+    align-items: center; 
+}
+
+.searchInput {
+    width: 100%; 
+    height: 40px; 
+    box-sizing: border-box; 
+
+}
+
+
+.searchBtn{
+    height: 40px;
+    margin-left: -20px; 
+}
+.bottomDiv {
+    justify-content:center;
+    
+    display: grid;
+    background-color: #FF4500; 
+    width: 900px;
+    height: 400px;
+    margin: 10px; 
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.test1,.test2, .test3, .test4, .test5, .test6{
+    width: 150px;
+    height: 150px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.test1{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.test2{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.test3{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.test4{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.test5{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.test6{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+
+.right-container:hover{
+    animation: animation-r-c 3s forwards;
+}
+@keyframes animation-r-c{
+    from{
+        left: 250px;
+    }
+
+    to{
+        left: 0px;
+    }
+}
+
+.center-content{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.right-container{
+    display: grid;
+    grid-template-rows: 42px 40px;
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 11px;
+    position: relative;
+    left: 250px;
+    border: 2px solid black;
+}
+.sendBtn{
+    width: 100%;
+}
